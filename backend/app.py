@@ -7,7 +7,7 @@ CORS(app)
 
 # Replace with your actual Gemini API key
 GENAI_API_KEY = "GENAI_API_KEY"
-genai.configure(api_key="AIzaSyDOBHbsdJbbo-SeT5DeGOqFeg-NMnqF9Wk")
+genai.configure(api_key="API")
 
 @app.route("/api/check_odd", methods=["POST"])
 def check_odd():
