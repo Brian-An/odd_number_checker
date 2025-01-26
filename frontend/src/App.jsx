@@ -21,36 +21,29 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-700 items-center justify-center p-4">
-      <div className="bg-transparent flex-col justify-center mb-6">
-        <div className="flex justify-center mb-6">
-          <img src={logo} alt="logo" className="p-7"/>
-          <div className="p-4">
-            <input
-              type="text"
-              value={numberInput}
-              onChange={(e) => setNumberInput(e.target.value)}
-              placeholder="Enter a number"
-              className="border-2 rounded-xl justify-center"
-            />
-          </div>
-          
-          <div className="p-4">
-            <button onClick={handleCheckOdd} className="border-2 rounded-xl justify-center">Check</button>
-          </div>
-          {result && (
-            <p
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              {result}
-            </p>
-          )}
-                </div>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-green-300">
+      <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-8">
+        <img src={logo} alt="logo" className="mx-auto mb-4" />
+        <div className="p-4">
+          <input
+            type="text"
+            value={numberInput}
+            onChange={(e) => setNumberInput(e.target.value)}
+            placeholder="Enter a number"
+            className="border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
         </div>
+
+        <div className="p-4 flex justify-center">
+          <button
+            onClick={handleCheckOdd}
+            className="bg-yellow-300 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Check
+          </button>
+        </div>
+        {result && <p className="text-center">{result}</p>}
+      </div>
     </div>
   );
 }
