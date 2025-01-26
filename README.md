@@ -1,5 +1,4 @@
-# odd number check
-# Wait Hold On, Is This Odd?  
+# Wait Hold on is this odd?
 
 ## 🌀 Inspiration  
 The idea sparked from a simple yet intriguing question: **"Is this number odd?"** While seemingly straightforward, we saw an opportunity to create a playful yet educational app leveraging cutting-edge technologies. By combining frontend tools like **React** and **Vite** with a **Flask** backend, we aimed to craft an interactive, responsive tool that answers this question in a fun and engaging way.  
