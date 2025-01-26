@@ -21,28 +21,36 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <div>
-        <img src={logo} alt="logo" />
-        <input
-          type="text"
-          value={numberInput}
-          onChange={(e) => setNumberInput(e.target.value)}
-          placeholder="Enter a number"
-        />
-        <button onClick={handleCheckOdd}>Check</button>
-        {result && (
-          <p
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            {result}
-          </p>
-        )}
-      </div>
+    <div className="min-h-screen bg-gray-700 items-center justify-center p-4">
+      <div className="bg-transparent flex-col justify-center mb-6">
+        <div className="flex justify-center mb-6">
+          <img src={logo} alt="logo" className="p-7"/>
+          <div className="p-4">
+            <input
+              type="text"
+              value={numberInput}
+              onChange={(e) => setNumberInput(e.target.value)}
+              placeholder="Enter a number"
+              className="border-2 rounded-xl justify-center"
+            />
+          </div>
+          
+          <div className="p-4">
+            <button onClick={handleCheckOdd} className="border-2 rounded-xl justify-center">Check</button>
+          </div>
+          {result && (
+            <p
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              {result}
+            </p>
+          )}
+                </div>
+        </div>
     </div>
   );
 }
